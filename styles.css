@@ -198,3 +198,67 @@ ul li {
         page-break-inside: avoid; /* Prevent breaking inside sections */
     }
 }
+.resume-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-section {
+    flex: 0 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #003366;
+    object-fit: cover;
+}
+
+.info-section {
+    flex: 1;
+    text-align: left;
+}
+
+.info-section h1 {
+    font-size: 2.2em;
+    margin: 0;
+    color: #003366;
+}
+
+.info-section p {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.info-section a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    .profile-section {
+        display: none; /* Hide profile image for print to save space */
+    }
+
+    .resume-header {
+        display: block;
+        text-align: center;
+    }
+
+    .info-section {
+        text-align: center;
+    }
+}

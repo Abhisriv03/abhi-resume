@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+header a {
+    color: #003366;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.4em;
+    border-bottom: 2px solid #003366;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #003366;
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.project, .job {
+    margin-bottom: 15px;
+}
+
+.date {
+    font-weight: bold;
+    color: #003366;
+}
+
+.tech, .location {
+    font-style: italic;
+    color: #555;
+}
+
+@media print {
+    .resume {
+        box-shadow: none;
+        border: none;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile-image {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular, remove if you prefer square */
+    border: 2px solid #003366;
+    object-fit: cover; /* Ensures the image fits within the bounds */
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+header a {
+    color: #003366;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.4em;
+    border-bottom: 2px solid #003366;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #003366;
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.project, .job {
+    margin-bottom: 15px;
+}
+
+.date {
+    font-weight: bold;
+    color: #003366;
+}
+
+.tech, .location {
+    font-style: italic;
+    color: #555;
+}
+
+@media print {
+    .resume {
+        box-shadow: none;
+        border: none;
+    }
+}
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 10pt; /* Adjust font size to fit more content */
+    }
+    .resume {
+        width: 100%; /* Full width for the page */
+        max-width: none; /* Override the max-width for printing */
+        box-shadow: none; /* Remove box shadow for print */
+        border: none; /* Remove border for a cleaner print */
+        padding: 10px; /* Reduce padding to maximize content space */
+    }
+    header, section {
+        page-break-inside: avoid; /* Prevent breaking inside sections */
+    }
+}
